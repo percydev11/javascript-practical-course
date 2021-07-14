@@ -2,20 +2,12 @@
 console.group("Squares");
 
 //Perimeter
-function squarePerimeter(side) {
-  return side * 4;
-}
-
-//Arrw function
-const squarePerimeter2 = (side) => side * 4;
+//Arrow function
+const squarePerimeter = (side) => side * 4;
 
 //Area
-function squareArea(side) {
-  return side * side;
-}
-
 //Arrow function
-const squareArea2 = (side) => side * side;
+const squareArea = (side) => side * side;
 
 console.groupEnd();
 
@@ -23,20 +15,12 @@ console.groupEnd();
 console.group("Triangles");
 
 //Perimeter
-function trianglePerimeter(side1, side2, base) {
-  return side1 + side2 + base;
-}
-
-//Arrow function 
-const trianglePerimeter2 = (side1, side2, base) => side1 + side2 + base;
+//Arrow function
+const trianglePerimeter = (side1, side, base) => side1 + side + base;
 
 //Area
-function triangleArea(base, height) {
-  return (base * height) / 2;
-}
-
-//Arrow function 
-const triangleArea2 = (base, height) => (base * height) / 2;
+//Arrow function
+const triangleArea = (base, height) => (base * height) / 2;
 
 console.groupEnd();
 
@@ -44,36 +28,38 @@ console.groupEnd();
 console.group("Circle");
 
 //Diameter
-function circleDiameter(radius) {
-  return  radius * 2;
-}
-
-//Arrow function 
-const circleDiameter2 = (radius) => radius * 2;
-
+//Arrow function
+const circleDiameter = (radius) => radius *  2;
 
 //PI
 const PI = Math.PI;
 console.log("PI is = " + PI);
 
 //Circumference
-function circlePerimeter(radius) {
-  const diameter = circleDiameter(radius);
-  return diameter * PI;
-}
-
 //Arrow function
-const circlePerimeter2 = (radius) => circleDiameter2(radius) * PI;
-
+const circlePerimeter = (radius) => circleDiameter(radius) * PI;
 
 //Area
-function circleArea(radius) {
-  return radius * radius * PI;
-}
-
-
 //Arrow function
-const circleArea2 = (radius) => PI * radius ** 2;
-
+const circleArea = (radius) => PI * radius ** 2;
 
 console.groupEnd();
+
+//Interaction with HTML
+function calculatePerimeterSquare() {
+  const input = document.getElementById("inputSquare");
+  const value = input.value;
+
+  const perimeter = squarePerimeter(value);
+  alert(perimeter);
+}
+
+function calculateAreaSquare() {
+
+  const input = document.getElementById("inputSquare");
+  const value = input.value;
+
+  const area = squareArea(value);
+  alert(area);
+
+}
