@@ -1,42 +1,79 @@
-//Square code
+//-----------Square code-----------
 console.group("Squares");
 
-//Sides
-const squareSide = 5;
-console.log("The sides of square measure " + squareSide + "cm");
-
 //Perimeter
-const squarePerimeter = squareSide * 4;
-console.log("The  perimeter of square measure " + squarePerimeter + "cm");
+function squarePerimeter(side) {
+  return side * 4;
+}
+
+//Arrw function
+const squarePerimeter2 = (side) => side * 4;
 
 //Area
-const squareArea = squareSide * squareSide;
-console.log("The area of square measure " + squareArea + "cm^2");
+function squareArea(side) {
+  return side * side;
+}
+
+//Arrow function
+const squareArea2 = (side) => side * side;
+
 console.groupEnd();
 
-
-//Triangle code
+//-----Triangle code-------------
 console.group("Triangles");
 
-//Sides
-const triangleSide1 = 6;
-const triangleSide2 = 6;
-const triangleBase = 4;
-console.log(
-  "The sides of triangle measure: " +
-    triangleSide1 +
-    "cm, " +
-    triangleSide2 +
-    "cm, " +
-    triangleBase +
-    "cm"
-);
-
-
 //Perimeter
+function trianglePerimeter(side1, side2, base) {
+  return side1 + side2 + base;
+}
+
+//Arrow function 
+const trianglePerimeter2 = (side1, side2, base) => side1 + side2 + base;
+
+//Area
+function triangleArea(base, height) {
+  return (base * height) / 2;
+}
+
+//Arrow function 
+const triangleArea2 = (base, height) => (base * height) / 2;
 
 console.groupEnd();
 
-
-//Circles code
+//-----------Circles code-----------------
 console.group("Circle");
+
+//Diameter
+function circleDiameter(radius) {
+  return  radius * 2;
+}
+
+//Arrow function 
+const circleDiameter2 = (radius) => radius * 2;
+
+
+//PI
+const PI = Math.PI;
+console.log("PI is = " + PI);
+
+//Circumference
+function circlePerimeter(radius) {
+  const diameter = circleDiameter(radius);
+  return diameter * PI;
+}
+
+//Arrow function
+const circlePerimeter2 = (radius) => circleDiameter2(radius) * PI;
+
+
+//Area
+function circleArea(radius) {
+  return radius * radius * PI;
+}
+
+
+//Arrow function
+const circleArea2 = (radius) => PI * radius ** 2;
+
+
+console.groupEnd();
