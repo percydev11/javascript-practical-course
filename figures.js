@@ -22,12 +22,11 @@ function calculateAreaSquare() {
   const value = input.value;
   const area = squareArea(value);
   alert("The area the squeare is = " + area);
-
 }
 
 console.groupEnd();
 
-//-----Triangle code-------------
+//----- Equilateral Triangle code-------------
 console.group("Triangles");
 
 //Perimeter
@@ -36,21 +35,20 @@ const trianglePerimeter = (side1, side2, base) => side1 + side2 + base;
 //Area
 const triangleArea = (base, height) => (base * height) / 2;
 
-function calculatePerimeterTriangle() {
+function calculatePerimeterEquilateral() {
   const inputSide1 = document.getElementById("InputSide1");
   const valueSide1 = Number(inputSide1.value);
   const inputSide2 = document.getElementById("InputSide2");
   const valueSide2 = Number(inputSide2.value);
   const inputBase = document.getElementById("InputBase");
   const valueBase = Number(inputBase.value);
-  const perimeter =  trianglePerimeter(valueSide1, valueSide2, valueBase);
+  const perimeter = trianglePerimeter(valueSide1, valueSide2, valueBase);
   alert("The perimeter of triangle is = " + perimeter);
-  
 }
 
-function calculateAreaTriangle() {
+function calculateAreaEquilateral() {
   const inputHeight = document.getElementById("InputHeight");
-  const valueHeight =  Number(inputHeight.value);
+  const valueHeight = Number(inputHeight.value);
   const inputBase = document.getElementById("InputBase");
   const valueBase = Number(inputBase.value);
   const area = triangleArea(valueHeight, valueBase);
@@ -59,11 +57,34 @@ function calculateAreaTriangle() {
 
 console.groupEnd();
 
+//----Isosceles Triangle Code----------------//////
+
+const heightIsoscelesTriangle = (side1, side2, base) =>  {
+  if(side1 === side2 && side1 != base) {
+    alert("It is a isosceles triangle");
+    const height = (Math.sqrt(side1 ** 2 - (base ** 2 / 4)));
+    alert("The height of the triangle is " + height);
+  } else {
+    alert("Not is a isosceles triangle");
+  }
+}
+
+function calculateHeightIsosceles() {
+  const side1 = document.getElementById("InputSide1Isos");
+  const valueSide1 = Number(side1.value);
+  const side2 = document.getElementById("InputSide2Isos");
+  const valueSide2 = Number(side2.value);
+  const base = document.getElementById("InputBaseIsos");
+  const valueBase = Number(base.value);
+  const heightIsosceles = heightIsoscelesTriangle(valueSide1, valueSide2, valueBase);
+  
+}
+
 //-----------Circles code-----------------
 console.group("Circle");
 
 //Diameter
-const circleDiameter = (radius) => radius *  2;
+const circleDiameter = (radius) => radius * 2;
 
 //PI
 const PI = Math.PI;
@@ -75,17 +96,18 @@ const circlePerimeter = (radius) => circleDiameter(radius) * PI;
 //Area
 const circleArea = (radius) => PI * radius ** 2;
 
-
 function calculatePerimeterCircle() {
-
-
+  const inputRadius = document.getElementById("InputRadius");
+  const valueRadius = inputRadius.value;
+  const perimeter = circleDiameter(valueRadius) * PI;
+  alert("The perimeter of circle is =  " + perimeter);
 }
 
 function calculateAreaCircle() {
-
-
+  const inputRadius = document.getElementById("InputRadius");
+  const valueRadius = inputRadius.value;
+  const area = PI * valueRadius ** 2;
+  alert("The area of circle is = " + area);
 }
 
 console.groupEnd();
-
-
