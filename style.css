@@ -55,7 +55,6 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,98,121,1) 21%, rgba
 
 .main form {
   width: 300px;
-  border: 1px solid purple;
   padding: 60px 68px 40px;
   border-radius: 40px;
   display: flex;
@@ -78,6 +77,11 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(111,121,9,1) 21%, rgb
 .main form label {
   margin: 10px 20px;
   border-radius: 10px;
+}
+
+.main form input {
+    border: none;
+    height: 1.5rem;
 }
 
 .footer {
