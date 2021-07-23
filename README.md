@@ -18,3 +18,11 @@ Javascript practical course at Platzi
 - Step two: implement the formulas in JavaScript.
 - Step three: create functions.
 - Step four: interact with  HTML from JavaScript.
+
+
+### Workshop #3 - Average, Mode, Median 
+
+- Step one: define the  formulas.
+- Step two: implement the formulas in JavaScript.
+- Step three: create functions.
+- Step four: integrate JavaScript with HTML.
