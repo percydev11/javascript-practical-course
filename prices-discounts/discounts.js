@@ -1,6 +1,3 @@
-const originalPrice = 120;
-const percentDiscount = 18;
-
 function calculatePriceWithDiscount(originalPrice, percentDiscount) {
   const percentPriceWithDiscount = 100 - percentDiscount;
 
