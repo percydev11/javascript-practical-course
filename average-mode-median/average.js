@@ -1,8 +1,5 @@
 function calculateAverage(list) {
-  /*let sumList = 0;
-  for (let i = 0; i < list.length; i++) {
-    sumList += list[i];
-  }*/
+
 
   const sumList = list.reduce(function (acumulatedValue = 0, newValue) {
     return acumulatedValue + newValue;
@@ -12,3 +9,6 @@ function calculateAverage(list) {
 
   return averageList;
 }
+
+const getAverage = (arr) =>
+arr.reduce((a,b) => a + b) / arr.length;
