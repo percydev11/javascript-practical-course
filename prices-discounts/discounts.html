@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prices and Discounts | Javascript practical course at Platzi</title>
+    <!--Js-->
+    <script src="./discounts.js"></script>
+
+    <!--Styles-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap"
+      rel="stylesheet"
+    />
+
+  </head>
+  <body>
+    <header class="header">
+      <h1>Prices and Discounts</h1>
+      <p>Second workshop Javascript practical course</p>
+    </header>
+
+    <main class="main">
+      <section class="content">
+        <h2>Calculate the price of pay of your products</h2>
+        <img src="./assets/discount_img.jpg" alt="Price Image">
+        <form >
+
+          <label for="InputPrice">Price of product</label>
+          <input id="InputPrice" type="number">
+
+          <label for="InputCoupon">Enter the name of the discount coupon</label> 
+          <input id="InputCoupon" type="text">
+
+          <button type="button" onclick="priceWithDiscount()">
+            Calculate the price with discount
+          </button>
+
+          <p id="ResultPrice"></p>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>Made by Percy Developer ⚡ - 2021</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+body {
+
+
+  font-family: "Otomanopee One", sans-serif;
+  
+}
+
+.header {
+  padding: 2rem;
+  text-align: center;
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,98,121,1) 1%, rgba(0,212,255,1) 100%);
+   
+}
+
+.header h1 {
+  color:white;
+}
+
+.main {
+  padding: 2rem;
+  height: 50%;
+}
+
+.main .content {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: 
+  radial-gradient(black 3px, transparent 4px),
+  radial-gradient(black 3px, transparent 4px),
+  linear-gradient(#fff 4px, transparent 0),
+  linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px),
+  linear-gradient(-45deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px),
+#fff;
+background-size: 109px 109px, 109px 109px,100% 6px, 109px 109px, 109px 109px;
+background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+}
+
+.main .content img {
+  height: 150px;
+  width: 160px;
+  margin: 10px 10px;
+ 
+}
+
+.main .content  form {
+  padding: 50px 20px;
+  border-radius: 50px;
+  width: 350px;
+  display: flex;
+  flex-flow: column wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: gray;
+}
+
+.main form button {
+  margin: 25px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: inherit;
+  width: 200px;
+}
+
+.main form label {
+ 
+  border-radius: 10px;
+  margin: 15px 20px;
+  text-align: center;
+}
+
+.main form input {
+  border: none;
+  height: 1.5rem;
+  width: 11rem;
+}
+
+.main form p {
+
+  color: white;
+  text-align: center;
+}
+
+.footer {
+  outline: 1px solid purple;
+  padding: 1rem;
+  text-align: center;
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,9,1) 100%, rgba(0,212,255,1) 100%);
+}
+
+.footer p {
+  color: white;
+}
