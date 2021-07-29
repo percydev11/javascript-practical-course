@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Average - Mode - Median</title>
+    <link rel="stylesheet" href="style.css" />
+    
     <!--JS -->
     <script src="./average.js"></script>
-    <script src="mode.js"></script>
+    <!--<script src="mode.js"></script>
     <script src="median.js"></script>
-    <script src="weighted-average.js"></script>
+    <script src="weighted-average.js"></script>->
 
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -26,16 +28,28 @@
     </header>
 
     <main class="main">
-      <section class="average">
-        <h2>Average</h2>
-        <form action="">
-          <label for="InputListAverage">Introduce your list of numbers</label>
-          <input id="InputListAverage" type="number" />
-          <button>Calculate</button>
+      <section class="calculations">
+        <h2>Average - Mode - Median - Weighted Average</h2>
+        <form class="form">
+          <label for="InputNumbers">Introduce your list of numbers</label>
+          <input id="InputNumbers" type="text" placeholder="1,2,3,4..."/>
+          <button type="button" onclick="average()">Calculate Average</button>
+          <button type="button" onclick="calculateMode()">Calculate Mode</button>
+          <button type="button" onclick="calculateMedian()">Calculate Median</button>
+          <button type="button" onclick="calculateWeightedAverage()">Calculate Weighted Average</button> 
+
+          <p id="ResultAverage"></p>
+          <p id="ResultMode"></p>
+          <p id="ResultMedian"></p>
+          <p id="ResultWeightedAverage"></p>
         </form>
       </section>
+
+
     </main>
 
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <p>Made by Percy Developer ⚡ - 2021</p>
+    </footer>
   </body>
 </html>

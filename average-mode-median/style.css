@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Otomanopee One", sans-serif;
+}
+
+.header {
+  padding: 2rem;
+  text-align: center;
+}
+
+.main .calculations {
+  outline: 1px solid blue;
+  padding: 2rem;
+  height: 50%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+}
+
+.main .calculations .form {
+  outline: 1px solid red;
+  width: 350px;
+  padding: 60px 68px 40px;
+  border-radius: 40px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #008B8B;
+  
+}
+
+.main  .form button {
+  margin: 15px 20px;
+  width: 10rem;
+  border-radius: 5px;
+  font-size: 14px;
+  border: none;
+  font-family: inherit;
+  height: 3.5rem;
+  
+}
+
+.main .form label {
+    margin: 10px 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .main .form input {
+    width: 100%;
+    height: 1.5rem;
+}
+
+  
+.footer p{
+    text-align: center;
+}

@@ -59,7 +59,6 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,98,121,1) 21%, rgba
   border-radius: 40px;
   display: flex;
   flex-flow: column wrap;
-  display: flex;
   align-items: center;
   justify-content: center;
   background: rgb(2,0,36);
