@@ -13,6 +13,7 @@ const getAverage = (arr) => arr.reduce((a, b) => a + b) / arr.length;
 function average() {
   const inputNumbers = document.getElementById("InputNumbers");
   const numbersValue = inputNumbers.value;
+  // Convert the string to an array
   const arrayValue = Array.from(numbersValue.split(","), Number);
   const resultAverage = calculateAverage(arrayValue);
   const result = document.getElementById("ResultAverage");
