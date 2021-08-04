@@ -41,7 +41,6 @@ function median() {
   const arrayValue = Array.from(numbersValue.split(","), Number);
   const resultMedian = calculateMedian(arrayValue);
   const result = document.getElementById("ResultMedian");
-  result.innerText = "The median is " + resultMedian;
-    
+  result.innerText = "The median is " + resultMedian;   
   
 }
